@@ -12,19 +12,19 @@
                     <router-link to="/" class="nav-link" >Home</router-link>
                 </li>
                 <li class="nav-item">
-                    <!-- <router-link to="/" class="nav-link" >Nuevo Personaje</router-link> -->
+                    <router-link to="/nuevopersonaje" class="nav-link" >Nuevo Personaje</router-link>
                 </li>
                 <li class="nav-item">
-                    <!-- <router-link to="/" class="nav-link" >Modificar Personajes</router-link> -->
+                    <router-link to="/modificarpersonaje" class="nav-link" >Modificar personajes</router-link>
                 </li>
                 <li class="nav-item">
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="dropdown03" data-bs-toggle="dropdown" aria-expanded="false">Series</a>
                     <ul class="dropdown-menu" aria-labelledby="dropdown03">
                     <li v-for="(serie, index) in series" :key="index">
-                          <router-link :to="'/detalle/' + serie.idserie" 
+                          <router-link :to="'/detalle/' + serie.idSerie" 
                           class="dropdown-item">
-                                {{serie.nombre+ " " + serie.idserie}}
+                                {{serie.nombre}}
                           </router-link>
                     </li>
                     </ul> 
